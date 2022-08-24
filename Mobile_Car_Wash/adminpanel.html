@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url('car.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+    <div class="main" style="text-align: center;margin-top:15%;">
+        
+        <h1>--------------- Welcome------------------</h1><br>
+
+        <p style="color:red;">Update the Place and Services Data</p><br>
+        <div style="text-align: center;">
+
+            <form  name="form1">
+                <select name="place" id="places">
+                    <option value="">Select</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Trichy">Trichy</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Thanjavur">Thanjavur</option>
+                 </select>
+            </form>
+            <br>
+        </div>
+            <div style="text-align: center;">
+                <form name="form2">
+                    <select name="service" id="services">
+                        <option value="">Select</option>
+                        <option value="Water Services">Water Service</option>
+                        <option value="Oil Services">Oil Service</option>
+                        <option value="Air Checkup">Air Checkup</option>
+                        <option value="Major Service">Major Service</option>
+                        <option value="Interior Services">Interior Service</option>
+                     </select>
+                </form>
+
+                <br>
+                <button onclick="func()">UPDATE</button>
+                <br><br>
+                <a href="login.html"> <button>LOGOUT</button></a>
+            </div>
+            <script>
+                function func(){
+                    var select = document.getElementById('services');
+                    var value = select.options[select.selectedIndex].value;
+                    var selected = document.getElementById('places');
+                    var valued = selected.options[selected.selectedIndex].value;
+                    var res = "You Successfully Updated "+value+" and ";
+                    var nres = res+valued;
+                    alert(nres);
+                }
+            </script>
+
+    </div>
+</body>
+</html>

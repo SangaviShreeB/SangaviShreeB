@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<style>
+body {
+  background-image: url('car.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.main{
+margin-top:15%;
+}
+</style>
+<center>
+ 
+    <div class="main">
+        <div class="form-container">
+            <div class="reg-title">
+                
+<h2>REGISTER</h2>
+            </div>
+<br>
+            <div class="form-con">
+                <form action="register.php" method="post">
+                    <div class="inputname"><b>
+                        Name:</b> <input type="text" name="user">
+                    </div>
+<br>
+     <div class="Age">
+                       <b> Age:</b> <input type="number" name="age">
+</div><br>
+
+                    <div class="inputpassword">
+                       <b> Password: </b><input type="password" name="pass">
+                    </div>
+<br>
+                     <div class="Confirm Password">
+                       <b> Confirm Password: </b><input type="password" name="password"></div><br>
+                    <div class="submitBtn">
+                        <input type="submit" value="SIGN UP">
+                    </div><br>
+                </form>
+                <div class="login">
+                    <p>Already a user - <a href="login.html">login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+</body>
+</html>

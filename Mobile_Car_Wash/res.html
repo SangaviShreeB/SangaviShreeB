@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+
+    <style>
+          body {
+  background-image: url('car.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    </style>
+</head>
+<body>
+    <div style="text-align: center;margin-top:15%;">
+        <h3>Select The place to find the service</h3>
+        <form  method="post" name="form1">
+            <select name="service" id="services">
+                <option value="">Select</option>
+                <option value="Water Services">Water Service</option>
+                <option value="Oil Services">Oil Service</option>
+                <option value="Air Checkup">Air Checkup</option>
+                <option value="Major Service">Major Service</option>
+                <option value="Interior Services">Interior Service</option>
+             </select>
+        </form>
+        <br>
+        <button onclick="func()">BOOKED</button>
+        <br>
+        <br>
+       <a href="login.html"> <button>LOGOUT</button></a>
+    </div>
+    <script>
+        function func(){
+            var select = document.getElementById('services');
+            var value = select.options[select.selectedIndex].value;
+            var res = "You Successfully Booked "+value;
+            alert(res);
+        }
+    </script>
+</body>
+</html>

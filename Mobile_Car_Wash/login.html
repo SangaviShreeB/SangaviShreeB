@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+body {
+     background-image: url('car.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;
+}
+.main{
+margin-top:15%;
+}
+</style>
+ 
+    <div class="main">
+        <div class="form-container">
+            <div class="log-title">
+               <center><h2>Login</h2>
+            </div>
+            <div class="form">
+                <form action="log.php" method="post" class="form-con">
+                    <div class="inputName"><center>
+                        <label><b>User Name : </b></label>
+                        <input type="text" name="user">
+                    </div>
+<br>
+                    <div class="inputpassword"><center>
+                        <label><b>Password :</b></label>
+                        <input type="password" name="pass">
+                    </div>
+                    <br>
+                    <div class="submitBtn"><center>
+                        <input type="submit" value="LOGIN" style="width: 80px; padding: 4px">
+                    </div>
+                </form>
+                <div style="text-align:center;">
+                    <p>Enter the admin username and password to enter into the admin panel</p>
+                </div>
+                <div class="signup"><center>
+                    <p><b>New User</b> - <a href="index.html">Signup</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
